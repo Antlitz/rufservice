@@ -1,0 +1,451 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+.chimneys
+	text-align: center
+	padding: 35px 0 50px
+	background-position: top
+	background-color: #7d7d7d
+	background: linear-gradient(to top, white 0%, #edecec 100%)
+	.production
+		position: relative
+		z-index: 5
+		padding-top: 20px
+		padding-bottom: 75px
+		text-align: left
+		h1
+			margin-bottom: 20px
+		img
+			position: absolute
+			top: -35px
+			left: -250px
+			z-index: -1
+		p
+			padding-right: 50px
+			color: #211f1f
+			font-size: 18px
+			line-height: 30px
+			margin-bottom: 40px
+		.consult
+			text-align: left
+			display: inline-block
+			padding: 0 17px
+			background-color: #f60707
+			border-radius: 5px
+			box-shadow: 1px 3px 0px 0px rgba(167,25,19,1)
+			color: #fff
+			font-size: 20px
+			font-weight: 700
+			line-height: 54px
+			&:active
+				box-shadow: none
+				transform: translateY(3px)
+	&-title
+		h2
+			position: relative
+			line-height: 95px
+			text-align: right
+			margin-bottom: 20px
+			img
+				position: absolute
+				top: 0
+				left: -35px
+		&.-right
+			h2
+				text-align: left
+			img
+				left: auto
+				right: -33px
+	&-slider1
+		width: 100%
+		height: calc( 100% + 1px )
+		margin-bottom: 40px
+		position: relative
+		overflow: hidden
+		z-index: 1
+	.item
+		border: 1px solid #b7b7b7
+		min-height: 495px
+		padding-bottom: 10px
+		&-pic
+			padding: 42% 0
+			width: 100%
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+		&-descr
+			padding: 12px 10px 0 10px
+			text-align: center
+			p
+				margin-bottom: 5px
+				color: #969191
+				font-family: "Open Sans"
+				font-size: 14px
+				font-weight: 400
+		.features
+			color: #000
+			margin-bottom: 8px
+			line-height: 18px
+			&:before,&:after
+				content: ''
+				display: table
+			&:after
+				clear: both
+		
+			&-name
+				float: left
+				font-size: 14px
+			&-descr
+				float: right
+				min-width: 80px
+				padding: 0 5px
+				font-size: 12px
+				background: #dadada
+		.oldprice
+			margin-bottom: 6px
+			font-size: 14px
+			line-height: 16px
+			text-align: center
+		.newprice
+			margin-bottom: 6px
+			color: #9e0b0f
+			line-height: 16px
+			text-align: center
+		.newprice-descr
+			margin-bottom: 8px
+			font-size: 14px
+			line-height: 16px
+			text-align: center
+		.chimneys-order
+			display: inline-block
+			padding: 0 50px
+			background-color: #8dc63f
+			border-radius: 5px
+			color: #fff
+			font-size: 16px
+			font-weight: 700
+			line-height: 35px
+			text-transform: uppercase
+			box-shadow: 0px 4px 0px #598527
+			&:active
+				box-shadow: none
+				transform: translateY(4px)
+	&-free
+		display: inline-block
+		padding: 13px 17px
+		color: #d83333
+		border: 1px solid #d83333
+		border-radius: 6px
+		text-align: center
+		box-shadow: 0px 3px 0px #d83333
+		font-weight: 700
+		&.-mini
+			padding: 13px 50px
+		&:active
+			box-shadow: none
+			transform: translateY(3px)
+.action
+	padding: 100px 0
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	.item
+		padding-right: 30px
+		&-title
+			margin-bottom: 45px
+			color: #fff
+			font-size: 48px
+			font-weight: 700
+			line-height: 48px
+			text-transform: uppercase
+		&-descr
+			position: relative
+			margin-bottom: 45px
+			color: #f60707
+			font-size: 36px
+			font-weight: 700
+			line-height: 72px
+			text-transform: uppercase
+			text-shadow: #fff 1px 0px, #fff 1px 1px, #fff 0px 1px, #fff -1px 1px, #fff -1px 0px, #fff -1px -1px, #fff 0px -1px, #fff 1px -1px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: -10px
+				display: block
+				width: calc( 100% - 10px )
+				height: 100%
+				border: 1px solid #fff
+			span
+				font-size: 48px
+			span + span
+				font-size: 72px
+		form
+			padding-left: 10px
+			padding-right: 30px
+			input[type="text"]
+				margin-bottom: 30px
+				padding: 0 10px
+				width: 100%
+				color: #958b7b
+				background-color: white
+				border: 1px solid #eb0e0e
+				border-radius: 5px
+				font-style: italic
+				line-height: 54px
+			input[type="submit"]
+				width: 100%
+				color: #fff
+				background-color: #f60707
+				border-radius: 5px
+				font-weight: 700
+				line-height: 50px
+				box-shadow: 0px 3px 0px #a71913
+				&:active
+					box-shadow: none
+					transform: translateY(3px)
+.measurement
+	padding: 55px 0 70px 0
+	border-bottom: 1px solid #fff
+	background-size: cover
+	background-position: center top
+	background-repeat: no-repeat
+	text-align: center
+	h1
+		margin-bottom: 25px
+		line-height: 36px
+	form
+		input[type="text"]
+			display: inline-block
+			width: 27.6%
+			margin-right: 46px
+			padding: 0 10px
+			background-color: white
+			border: 1px solid #eb0e0e
+			border-radius: 5px
+			font-style: italic
+			line-height: 54px
+		input[type="submit"]
+			display: inline-block
+			width: 27.6%
+			background-color: #f60707
+			border-radius: 5px
+			color: #fff
+			line-height: 51px
+			box-shadow: 0px 3px 0px #a71913
+			vertical-align: top
+			&:active
+				box-shadow: none
+				transform: translateY(3px)
+.installation
+	padding: 75px 0 105px 0
+	background-size: cover
+	background-position: center top
+	background-repeat: no-repeat
+	&-title
+		margin-bottom: 20px
+		line-height: 30px
+		color: #fff
+		font-family: $font-bold
+		letter-spacing: -0.2px
+	&-descr
+		margin-bottom: 20px
+		color: #fff
+	.order
+		position: relative
+		padding: 15px 59px 10px 59px
+		border: 1px solid #fff
+		border-radius: 5px
+		border-bottom-left-radius: 4px
+		background: #c1bebe
+		background: -moz-linear-gradient(left, #c2bfbf 0%, #ece9e9 45%, #ece9e9 45%, #c0bdbd 100%)
+		background: -webkit-linear-gradient(left, #c2bfbf 0%,#ece9e9 45%,#ece9e9 45%,#c0bdbd 100%)
+		background: linear-gradient(to right, #c2bfbf 0%,#ece9e9 45%,#ece9e9 45%,#c0bdbd 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2bfbf', endColorstr='#c0bdbd',GradientType=0 )
+		&-triangle
+			position: absolute
+			left: 0
+			top: calc( 100% - 4px )
+			width: 100%
+			img
+				display: block
+				width: calc( 100% + 2px )
+				margin-left: -1px
+		&-title
+			text-align: center
+		&-head
+			margin-bottom: 10px
+			color: #070707
+			font-size: 26px
+			line-height: 30px
+		&-discount
+			margin-bottom: 15px
+			color: #f60707
+			font-size: 36px
+			font-weight: 700
+			line-height: 30px
+			text-shadow: #fff 1px 0px, #fff 1px 1px, #fff 0px 1px, #fff -1px 1px, #fff -1px 0px, #fff -1px -1px, #fff 0px -1px, #fff 1px -1px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px, #fff 0 0 3px
+		&-form
+			input[type="text"]
+				width: 100%
+				padding: 0 10px
+				margin-bottom: 20px
+				color: #555253
+				font-size: 18px
+				font-style: italic
+				line-height: 48px
+				background-color: #fff
+				border: 1px solid #f60707
+				border-radius: 5px
+			input[type="submit"]
+				width: 100%
+				background-color: #f60707
+				border-radius: 5px
+				box-shadow: 1px 3px 0px 0px rgba(167,25,19,1)
+				color: #fff
+				font-size: 24px
+				font-family: $font-bold
+				line-height: 48px
+				font-weight: 700
+				&:active
+					box-shadow: none
+					transform: translateY(3px)
+.steps
+	padding: 50px 0 35px 0
+	h1
+		margin-bottom: 25px
+		text-align: center
+	&-item
+		margin-bottom: 20px
+		text-align: center
+		&:nth-of-type(2)
+			.item-pic
+				padding-top: 10px
+		&:first-of-type
+			padding-right: 25px
+			span
+				font-weight: 700
+				text-decoration: underline
+			span + span
+				color: #f26522
+				text-decoration: none
+		&:last-of-type
+			padding-left: 40px
+	.item-pic
+		min-height: 110px
+		margin-bottom: 5px
+		img
+			vertical-align: middle
+	.item-descr
+		color: #01365d
+		font-size: 14px
+		line-height: 18px
+	.fcking_designer
+		letter-spacing: -0.2px
+.work
+	padding: 55px 0 35px 0
+	background-color: #ebebeb
+	background-image: linear-gradient(to top, white 0%, #ecedf0 100%)
+	h1
+		text-align: center
+	&-portfolio
+	&-list
+		padding: 0
+	&-item
+		padding: 50% 0
+		margin-bottom: 20px
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+.map
+	padding: 45px 0 55px 0
+	background-size: cover
+	background-position: center top
+	background-repeat: no-repeat
+	.consult
+		padding: 30px
+		font-family: 'Calibri', sans-serif
+		text-align: center
+		background-color: white
+		background-image: linear-gradient(to top, #d3cfc6 0%, white 100%)
+		border: 1px solid #afaaa0
+		border-radius: 5px
+		box-shadow: 1px 1.7px 13px rgba(5, 46, 53, 0.71)
+		.consult-head
+			color: #2d5b9b
+			font-size: 24px
+			font-weight: 700
+			line-height: 24px
+		.consult-descr
+			margin-bottom: 22px
+			color: #191c1d
+			font-size: 18px
+			line-height: 24px
+			b
+				font-size: 24px
+		form
+			input[type="text"]
+				width: 90%
+				padding: 0 10px
+				margin-bottom: 15px
+				border: 1px solid #f26522
+				border-radius: 5px
+				color: #706c6a
+				font-size: 14px
+				font-style: italic
+				line-height: 32px
+			input[type="submit"]
+				width: 90%
+				background: #f60707
+				border-radius: 5px
+				box-shadow: 1px 3px 0px 0px rgba(167,25,19,1)
+				color: #fff
+				font-size: 14px
+				font-weight: 700
+				line-height: 35px
+				text-transform: uppercase
+				&:active
+					box-shadow: none
+					transform: translateY(3px)
+.footer
+	padding: 30px 0 40px 0
+	background: #636363
+	color: #fff
+	&-item
+		padding-left: 160px
+		font-size: 14px
+		line-height: 24px
+		span
+			display: block
+			font-weight: 700
+
+
+
+//ALWAYS END
+@import "media"
