@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Заголовок</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Bootstrap v3.3.4 Grid Styles-->
+    <style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;text-decoration:none}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:10px;padding-right:10px}@media (min-width:768px){.container{width:740px}}@media (min-width:992px){.container{width:960px}}@media (min-width:1200px){.container{width:960px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:10px;padding-right:10px}.row{margin-left:-10px;margin-right:-10px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:10px;padding-right:10px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table !important}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table !important}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table !important}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table !important}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table !important}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}.no-gutter>[class*='col-']{padding-right:0;padding-left:0;</style>
+    <!-- Header CSS (First Sections of Website: paste after release from _header.min.css here)-->
+    <style>.sell .order,body,header{position:relative}body{margin:0;font-size:18px;min-width:320px;line-height:1.6;font-family:OpenSans,sans-serif;overflow-x:hidden}h1,h2{font-family:OpenSansExtraBold,sans-serif;margin:0;font-weight:700}h1{color:#01365d;font-size:36px;line-height:48px}h2{color:#151616;font-size:24px;line-height:30px}h3{margin:0;color:#000;font-size:18px;font-weight:700}input{outline:0;border:none}a{cursor:pointer}a:focus,a:hover{text-decoration:none;outline:0}p{margin:0}ul{list-style:none}.hidden{display:none}header{-webkit-box-shadow:2px 3.5px 5px rgba(0,0,0,.13);box-shadow:2px 3.5px 5px rgba(0,0,0,.13);z-index:1}header .nav{min-height:100px}header .nav-tel{line-height:100px;margin-right:55px}.nav-tel:last-child{margin-right:0}header .nav-tel b{font-size:24px}header .nav-order{text-align:right}.advantages-item,.sell .order-title,.sell h1{text-align:center}header .nav-order a{padding:9px 30px;color:#fff;line-height:100px;background-color:#f60707;background-image:-webkit-gradient(linear,left bottom,left top,from(#f60707),color-stop(0,#f60707),to(#f60707));background-image:-webkit-linear-gradient(bottom,#f60707 0,#f60707 0,#f60707 100%);background-image:linear-gradient(to top,#f60707 0,#f60707 0,#f60707 100%);-webkit-border-radius:5px;border-radius:5px}.sell{padding-top:50px;background-image:url(../img/sell.jpg);background-size:cover;background-position:center bottom;background-repeat:no-repeat}.sell h1{margin-bottom:30px;color:#fff;font-size:48px;line-height:80px;font-weight:700;text-transform:uppercase}.sell h1 span{display:block;font-weight:400;font-family:'OpenSans',sans-serif}.sell .order{padding:15px 59px 10px;border:1px solid #fff;-webkit-border-radius:5px 5px 5px 4px;border-radius:5px 5px 5px 4px;background:#c1bebe;background:-webkit-linear-gradient(left,#c2bfbf 0,#ece9e9 45%,#ece9e9 45%,#c0bdbd 100%);background:-webkit-gradient(linear,left top,right top,from(#c2bfbf),color-stop(45%,#ece9e9),color-stop(45%,#ece9e9),to(#c0bdbd));background:linear-gradient(to right,#c2bfbf 0,#ece9e9 45%,#ece9e9 45%,#c0bdbd 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2bfbf', endColorstr='#c0bdbd', GradientType=0 )}.sell .order-triangle{position:absolute;left:0;top:-webkit-calc(100% - 4px);top:calc(100% - 4px);width:100%}.sell .order-triangle img{display:block;width:-webkit-calc(100% + 2px);width:calc(100% + 2px);margin-left:-1px}.sell .order-head{color:#01365d;font-size:36px;font-weight:400;line-height:48px}.sell .order-discount{color:#f60707;font-size:36px;line-height:48px;font-family:OpenSansBold,sans-serif;text-shadow:#fff 1px 0,#fff 1px 1px,#fff 0 1px,#fff -1px 1px,#fff -1px 0,#fff -1px -1px,#fff 0 -1px,#fff 1px -1px,#fff 0 0 3px,#fff 0 0 3px,#fff 0 0 3px,#fff 0 0 3px,#fff 0 0 3px,#fff 0 0 3px,#fff 0 0 3px,#fff 0 0 3px}.sell .order-discount span{font-size:46px}.sell .order-descr{color:#01365d;font-size:24px;font-weight:700;line-height:48px}.sell .order-form input[type=text]{width:100%;padding:0 10px;margin-bottom:20px;color:#555253;font-size:18px;font-style:italic;line-height:48px;background-color:#fff;border:1px solid #f60707;-webkit-border-radius:5px;border-radius:5px}.sell .order-form input[type=submit]{width:100%;background-color:#f60707;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:1px 3px 0 0 #a71913;box-shadow:1px 3px 0 0 #a71913;color:#fff;font-size:30px;font-family:OpenSansBold,sans-serif;line-height:48px}.sell .order-form input[type=submit]:active{-webkit-box-shadow:none;box-shadow:none;-webkit-transform:translateY(3px);-ms-transform:translateY(3px);transform:translateY(3px)}.advantages{padding:90px 0 50px;background-size:cover;background-repeat:no-repeat;background-position:center}.advantages h1{position:relative;z-index:2;margin-bottom:20px}.advantages-item{margin-bottom:20px}.advantages-item:nth-of-type(2) .item-pic{padding-top:10px}.advantages-item:first-of-type{padding-right:30px}.advantages-item:last-of-type{padding-left:40px;margin-bottom:0}.advantages .item-pic{min-height:110px;margin-bottom:5px}.advantages .item-pic img{vertical-align:middle}.advantages .item-descr{color:#004a80;font-size:18px;line-height:18px}.advantages .item-descr:before{content:'';display:block;width:90px;height:1px;background:#004a80;margin:0 auto 5px}@media only screen and (max-width:992px){header .nav-order a,header .nav-tel{line-height:25px}.advantages h1,.advantages-item,.chimneys .production,.chimneys-title.-right h2,header .nav-order,header .nav-tel{text-align:center}.advantages-item:first-of-type,.steps-item:first-of-type{padding-right:0}.advantages-item:last-of-type,.steps-item:last-of-type{padding-left:0}header{padding-top:20px}header .nav-tel{display:block;margin-right:0}.chimneys .production img,.chimneys-title h2 img{display:none}header .nav-tel b{font-size:20px}header .nav-order{padding-top:9px}.advantages-item:nth-of-type(2) .item-pic,.steps-item:nth-of-type(2) .item-pic{padding-top:0}.advantages-item{margin-bottom:20px}.chimneys-title h2{line-height:25px;text-align:center}.footer-item{padding:0}}@media only screen and (max-width:768px){h1{font-size:30px}.sell h1{font-size:28px;line-height:40px}.action{padding:40px 0}.action .item{text-align:center;padding-right:0}.action .item-title{margin-bottom:20px;font-size:24px;line-height:24px}.action .item-descr{padding:20px 0;font-size:24px;line-height:30px}.action .item-descr:before{left:0}.action .item-descr span,.action .item-descr span+span{font-size:40px}.action .item form input[type=text]{text-overflow:ellipsis;word-wrap:break-word}.measurement form input[type=text]{display:block;width:60%;margin:0 auto 20px}.measurement form input[type=submit]{display:block;width:60%;margin:0 auto}.animated{-webkit-transition-property:none!important;transition-property:none!important;-ms-transform:none!important;-webkit-transform:none!important;transform:none!important;-webkit-animation:none!important;animation:none!important}}@media only screen and (max-width:480px){.sell .order-discount,.sell .order-head{font-size:24px;line-height:30px}.sell .order-discount span{font-size:26px}.sell .order-descr{line-height:30px;margin-bottom:10px}.sell .order-form input[type=submit]{font-size:22px}.chimneys .production{text-align:center;padding-bottom:20px}.chimneys .production p{padding-right:0}.chimneys .production .consult{line-height:30px;text-align:center}.measurement form input[type=text]{display:block;width:90%;margin:0 auto 20px}.measurement form input[type=submit]{display:block;width:90%;margin:0 auto}.installation .order{padding:10px}.installation .order-head{font-size:24px}.installation .order-discount{font-size:29px}}</style>
+    <!-- Load CSS & WebFonts Main Function-->
+    <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+    <!-- Load CSS Start-->
+    <script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+    <!-- script loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );-->
+    <script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+    <script>loadCSS( "libs/swiperslider/swiper.min.css?ver=1.0.0", false, "all" );</script>
+    <!-- Load CSS End-->
+    <!-- Load CSS Compiled without JS-->
+    <noscript>
+      <link rel="stylesheet" href="css/fonts.min.css">
+      <link rel="stylesheet" href="css/main.min.css">
+    </noscript><script>
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6"><span class="nav-tel">+375 29 <b>697-77s-80</b></span><span class="nav-tel">+375 29 <b>197-77-80</b></span></div>
+            <div class="col-sm-6">
+              <div class="nav-order"><a href="#">Заказать обратный звонок</a></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div style="background-image: url(img/sell.jpg)" class="sell">
+      <div class="container">
+        <div class="row">
+          <h1>продажа и монтаж дымоходов <span>по низким ценам</span></h1>
+          <div class="col-md-5 col-sm-8 pull-right col-xs-12 col-md-pull-1"> 
+            <div class="order">
+              <div class="order-title">
+                <div class="order-head">Только в июне</div>
+                <div class="order-discount">скидка <span>20%</span></div>
+                <div class="order-descr">на всю продукцию</div>
+              </div>
+              <form class="order-form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <input type="submit" value="Заказать">
+              </form>
+              <div class="order-triangle"><img src="img/order-bg.png" alt="#"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-image: url(img/advantages-bg.jpg)" class="advantages">
+      <div class="container">
+        <div class="row no-gutter">
+          <h1>Преимущества нашей компании</h1>
+          <div class="advantages-item col-md-2 col-sm-6">
+            <div class="item-pic"><img src="img/advantages1.png" alt="#"></div>
+            <div class="item-descr">Собственное<br>производство</div>
+          </div>
+          <div class="advantages-item col-md-3 col-sm-6">
+            <div class="item-pic"><img src="img/advantages2.png" alt="#"></div>
+            <div class="item-descr">Сертицифированный<br>товар</div>
+          </div>
+          <div class="advantages-item col-md-2 col-sm-6">
+            <div class="item-pic"><img src="img/advantages3.png" alt="#"></div>
+            <div class="item-descr">Высокое<br>качество</div>
+          </div>
+          <div class="advantages-item col-md-3 col-sm-6">
+            <div class="item-pic"><img src="img/advantages4.png" alt="#"></div>
+            <div class="item-descr">
+              <div>Низкие<br>цены</div>
+            </div>
+          </div>
+          <div class="advantages-item col-md-2 col-sm-6">
+            <div class="item-pic"><img src="img/advantages5.png" alt="#"></div>
+            <div class="item-descr">Монтаж<br>дымоходов</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chimneys">
+      <div class="container">
+        <div class="production">
+          <div class="row">
+            <div class="col-md-6 col-md-pull-1 pull-right">
+              <h1>Наша продукция</h1>
+              <p>У нас вы можете купить <strong>дымоходы</strong> из нержавеющей стали <strong>различной конструкции</strong> и <strong>крепежные, монтажные элементы</strong> для качественного и эстетического монтажа.</p><a href="#" class="consult">Получить консультацию бесплатно</a>
+            </div><img src="img/production.png" alt="#">
+          </div>
+        </div>
+        <div class="row no-gutter">
+          <div class="chimneys-title">
+            <h2><img src="img/chimneys-title.png" alt="#">Дымоходы из нержавеющей стали круглого сечения</h2>
+          </div>
+          <div class="chimneys-slider1">
+            <div class="slider-wrapper clearfix">
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item2.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a href="#" class="chimneys-free -mini">Получить скидку на монтаж</a>
+        </div>
+      </div>
+    </div>
+    <div class="chimneys">
+      <div class="container">
+        <div class="row no-gutter">
+          <div class="chimneys-title -right">
+            <h2><img src="img/chimneys-title2.png" alt="#">Дымоходы из черной стали круглого сечения</h2>
+          </div>
+          <div class="chimneys-slider1">
+            <div class="slider-wrapper clearfix">
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item2.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a href="#" class="chimneys-free">Получить замер и спецификацию бесплатно</a>
+        </div>
+      </div>
+    </div>
+    <div class="chimneys">
+      <div class="container">
+        <div class="row no-gutter">
+          <div class="chimneys-title">
+            <h2><img src="img/chimneys-title.png" alt="#">Дымоходы из нержавеющей стали овального сечения</h2>
+          </div>
+          <div class="chimneys-slider1">
+            <div class="slider-wrapper clearfix">
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item2.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a href="#" class="chimneys-free -mini">Получить скидку на монтаж</a>
+        </div>
+      </div>
+    </div>
+    <div class="chimneys">
+      <div class="container">
+        <div class="row no-gutter">
+          <div class="chimneys-title -right">
+            <h2><img src="img/chimneys-title2.png" alt="#">Утеплённые дымоходы из нержавеющей стали</h2>
+          </div>
+          <div class="chimneys-slider1">
+            <div class="slider-wrapper clearfix">
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item1.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="item">
+                  <div style="background-image: url(img/chimneys1-item2.jpg);" class="item-pic"></div>
+                  <div class="item-descr">
+                    <h3>Нержавеющая<br>вставка НВ 1000 мм</h3>
+                    <p>Технические характеристики</p>
+                    <div class="features">
+                      <div class="features-name">Толщина</div>
+                      <div class="features-descr">0,5-1,0 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Диаметр</div>
+                      <div class="features-descr">D=120-200 мм</div>
+                    </div>
+                    <div class="features">
+                      <div class="features-name">Марка стали</div>
+                      <div class="features-descr">AISI-430</div>
+                    </div>
+                    <div class="oldprice">от <b>18</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice">от <b>15</b> руб. <b>06</b> коп.</div>
+                    <div class="newprice-descr">(от 150 600 руб.)</div><a href="#" class="chimneys-order">заказать	</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a href="#" class="chimneys-free">Получить замер и спецификацию бесплатно</a>
+        </div>
+      </div>
+    </div>
+    <div style="background-image: url(img/action-bg-test.png)" class="action">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-xs-10 col-xs-push-1">
+            <div class="item">
+              <div class="item-title">Только в июне!</div>
+              <div class="item-descr"><span>Скидка</span> на всю продукцию <span>20</span>% </div>
+              <form>
+                <input type="text" placeholder="Введите Ваш телефон">
+                <input type="submit" value="Оставить заявку">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-image: url(img/measurement-bg.png)" class="measurement">
+      <div class="container">
+        <div class="row">
+          <h1>Получить замер и спецификацию бесплатно</h1>
+          <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш телефон">
+            <input type="submit" value="Получить сейчас">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div style="background-image: url(img/installation-bg.png)" class="installation">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-push-1 col-md-5">
+            <h1 class="installation-title">Монтаж дымоходов</h1>
+            <p class="installation-descr">Наша компания осуществляет монтаж дымоходов из нержавеющей стали собственного производства.<br>Сборку проводят профессиональные монтажные группы, за плечами которых большой опыт работы по монтажу модульных дымотрубных систем.</p>
+            <div class="order">
+              <div class="order-title">
+                <div class="order-head"><strong>Закажите дымоход</strong> и получите скидку</div>
+                <div class="order-discount">5% на монтаж</div>
+              </div>
+              <form class="order-form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <input type="submit" value="Оставить заявку">
+              </form>
+              <div class="order-triangle"><img src="img/order-bg.png" alt="#"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="container">
+        <div class="row no-gutter">
+          <h1>Как мы работаем</h1>
+          <div class="steps-item col-md-2 col-sm-6">
+            <div class="item-pic arrow-b"><img src="img/steps1.png" alt="#"></div>
+            <div class="item-descr">Вы оставляете <span>заявку</span> на сайте или звоните нам: <span>+375 17 369 92 05</span></div>
+          </div>
+          <div class="steps-item col-md-3 col-sm-6">
+            <div class="item-pic arrow-t"><img src="img/steps2.png" alt="#"></div>
+            <div class="item-descr">Расчет стоимоcти<br>он-лайн</div>
+          </div>
+          <div class="steps-item col-md-2 col-sm-6">
+            <div class="item-pic arrow-b"><img src="img/steps3.png" alt="#"></div>
+            <div class="item-descr fcking_designer">Оплата и изготовление дымохода</div>
+          </div>
+          <div class="steps-item col-md-3 col-sm-6">
+            <div class="item-pic arrow-t"><img src="img/advantages5.png" alt="#"></div>
+            <div class="item-descr">Монтаж<br>дымохода</div>
+          </div>
+          <div class="steps-item col-md-2 col-sm-6">
+            <div class="item-pic arrow-b"><img src="img/advantages4.png" alt="#"></div>
+            <div class="item-descr">Окончательный<br>расчёт<br>за монтаж</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="work">
+      <div class="container">
+        <div class="row">
+          <h1>Наши работы</h1>
+          <div class="work-portfolio">
+            <ul class="work-list">
+              <li class="col-md-4 col-sm-6">
+                <div style="background-image: url(img/portfolio1.jpg)" class="work-item"></div>
+              </li>
+              <li class="col-md-4 col-sm-6">
+                <div style="background-image: url(img/portfolio1.jpg)" class="work-item"></div>
+              </li>
+              <li class="col-md-4 col-sm-6">
+                <div style="background-image: url(img/portfolio1.jpg)" class="work-item"></div>
+              </li>
+              <li class="col-md-4 col-sm-6">
+                <div style="background-image: url(img/portfolio1.jpg)" class="work-item"></div>
+              </li>
+              <li class="col-md-4 col-sm-6">
+                <div style="background-image: url(img/portfolio1.jpg)" class="work-item"></div>
+              </li>
+              <li class="col-md-4 col-sm-6">
+                <div style="background-image: url(img/portfolio1.jpg)" class="work-item"></div>
+              </li>
+              <li class="col-md-4 col-sm-6">
+                <div style="background-image: url(img/portfolio1.jpg)" class="work-item"></div>
+              </li>
+              <li class="col-md-4 col-sm-6">
+                <div style="background-image: url(img/portfolio1.jpg)" class="work-item"></div>
+              </li>
+              <li class="col-md-4 col-sm-6">
+                <div style="background-image: url(img/portfolio1.jpg)" class="work-item"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-image: url(img/map.jpg)" class="map">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-push-6 col-md-4">
+            <div class="consult">
+              <div class="consult-head">ОСТАЛИСЬ ВОПРОСЫ?</div>
+              <div class="consult-descr">Позвоните нам по тел:<br>+375 17 <b>369-92-05</b></div>
+              <div class="consult-descr">или оставьте заявку<br><b>и мы вам перезвоним</b></div>
+              <form>
+                <input type="text" placeholder="Вашe имя">
+                <input type="text" placeholder="Ваш телефон">
+                <input type="submit" value="Получить консультацию">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-xs-6">
+            <div class="footer-item">Дымоходы, вентиляция,<br>оборудование, аксессуары<span>+375 29 197 77 80</span><span>+375 29 697 77 80</span></div>
+          </div>
+          <div class="col-sm-7 col-xs-6">
+            <div class="footer-item">Монтаж дымоходов<br>и отопительного оборудования<span>+375 29 691-26-51</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden"></div>
+    <!-- Поддержка старых браузеров--><!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- Load Scripts-->
+    <script>
+      var scr = {"scripts":[
+      {"src" : "js/libs.js", "async" : false},
+      {"src" : "libs/swiperslider/swiper.min.js", "async" : false},
+      {"src" : "js/common.js", "async" : false}
+      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+    </script>
+  </body>
+</html>

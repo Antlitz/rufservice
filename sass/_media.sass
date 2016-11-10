@@ -1,0 +1,210 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header
+		padding-top: 20px
+		.nav-tel
+			display: block
+			text-align: center
+			line-height: 25px
+			margin-right: 0
+			b
+				font-size: 20px
+		.nav-order
+			text-align: center
+			padding-top: 9px
+			a
+				line-height: 25px
+	.advantages
+		h1
+			text-align: center
+		&-item
+			text-align: center
+			margin-bottom: 20px
+			&:nth-of-type(2)
+				.item-pic
+					padding-top: 0
+			&:first-of-type
+				padding-right: 0
+			&:last-of-type
+				padding-left: 0
+	.chimneys
+		.production
+			text-align: center
+			img
+				display: none
+		&-title
+			h2
+				line-height: 25px
+				text-align: center
+				img
+					display: none
+			&.-right
+				h2
+					text-align: center
+	.steps
+		&-item
+			&:nth-of-type(2)
+				.item-pic
+					padding-top: 0
+			&:first-of-type
+				padding-right: 0
+			&:last-of-type
+				padding-left: 0
+	.footer
+		&-item
+			padding: 0
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	h1
+		font-size: 30px
+	.sell
+		h1
+			font-size: 28px
+			line-height: 40px
+	.action
+		padding: 40px 0
+		.item
+			text-align: center
+			padding-right: 0
+			&-title
+				margin-bottom: 20px
+				font-size: 24px
+				line-height: 24px
+			&-descr
+				padding: 20px 0
+				font-size: 24px
+				line-height: 30px
+				&:before
+					left: 0
+				span
+					font-size: 40px
+				span+span
+					font-size: 40px
+			form
+				input[type="text"]
+					text-overflow: ellipsis
+					word-wrap: break-word
+	.measurement
+		form
+			input[type="text"]
+				display: block
+				width: 60%
+				margin: 0 auto
+				margin-bottom: 20px
+			input[type="submit"]
+				display: block
+				width: 60%
+				margin: 0 auto
+
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.sell
+		.order-head
+			font-size: 24px
+			line-height: 30px
+		.order-discount
+			font-size: 24px
+			line-height: 30px
+			span
+				font-size: 26px
+		.order-descr
+			line-height: 30px
+			margin-bottom: 10px
+		.order-form
+			input[type="submit"]
+				font-size: 22px
+	.chimneys
+		.production
+			text-align: center
+			padding-bottom: 20px
+			p
+				padding-right: 0
+			.consult
+				line-height: 30px
+				text-align: center
+	.measurement
+		form
+			input[type="text"]
+				display: block
+				width: 90%
+				margin: 0 auto
+				margin-bottom: 20px
+			input[type="submit"]
+				display: block
+				width: 90%
+				margin: 0 auto
+	.installation
+		.order
+			padding: 10px
+		.order-head
+			font-size: 24px
+		.order-discount
+			font-size: 29px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
